@@ -2,16 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.container {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 25px;
+  color: white;
 }
 
 body {
@@ -24,4 +21,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.links {
+  display: flex;
+  gap: 10px;
+  
+}
+.firstcard {
+  height: 250px;
+  width: 250px;
+  border: 2px solid black;
+}
+.image {
+  height: 250px;
 }
